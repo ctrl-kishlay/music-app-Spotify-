@@ -4,7 +4,7 @@ let currentSong = new Audio();
 let currentIndex = 0; // Track the current song index
 
 async function getsongs() {
-    let a = await fetch("/songs");
+    let a = await fetch("songs");
     let response = await a.text();
     console.log(response);
     let div = document.createElement("div");
@@ -14,7 +14,7 @@ async function getsongs() {
     for (let index = 0; index < as.length; index++) {
         const element = as[index];
         if (element.href.endsWith(".mp3")) {
-            songs.push(element.href.split("/songs/")[1]);
+            songs.push(element.href.split("songs")[1]);
         }
     }
     return songs;
