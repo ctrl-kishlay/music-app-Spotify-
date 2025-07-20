@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="nav flex">
+        <div class="logo invert">
+            <img src="logo.svg" alt="spotify" />
+        </div>
+        <div class="button flex p-1 m-1">
+            <button class="home-button">
+                <img src="home.svg" alt="home" class="home-icon invert" />
+            </button>
+            <div class="search-bar flex">
+                <button class="search-button">
+                    <img src="search.svg" alt="search" class="search-icon invert" />
+                </button>
+                What do you want to play?
+                <button class="browse-icon invert">
+                    <img src="browse.svg" alt="browse">
+                </button>
+            </div>
+        </div>
+        <div class="nav-buttons flex ">
+            
+                <div>
+                    <a href="https://www.spotify.com/in-en/premium/">Premium</a>
+                </div>
+                <div>
+                    <a href="https://support.spotify.com/in-en/">Support</a>
+                </div>
+                <div>
+                    <a href="https://www.spotify.com/in-en/download/windows/">Download</a>
+                </div>
+            <div class="separator "></div>
+            <button class="install-button ">
+                <span>Install app</span>
+            </button>
+            <div>
+                <button class="signup-button p-1">Sign up</button>
+            </div>
+            <button class="login-button ">Log in</button>
+        </div>
+    </div>
+    <div class="container flex bg-black">
+        <div class="left ">
+            <div class="library  rounded m-1 p-1">
+               
+                <h1 class="heading">Your Library</h1>
+                <div class="songList">
+                        <ul>
+                            <li>
+                                <img class="invert"src="music.svg" alt="">
+                                <div class="info">
+                                    <div>Song Name</div>
+                                    <div>Song Artist</div>
+                                </div>
+                                <div class="playlibrary">
+                                    
+                                    <img class="playlibrary invert" src="play.svg" alt="">
+                                    
+                                </div>
+                                </li>
+                        </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right  rounded p-1 m-1">
+            <div id="libcollapse">
+                <img class="libicon" src="library.svg" alt="">
+            </div>
+            <div class="spotifyplaylists">
+                <h1>Trending song</h1>
+                <div class="card-container">
+                    <div class="cards">
+                        <div class="play ">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            class="e-9960-icon e-9960-baseline" viewBox="0 0 24 24">
+                            <path
+                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                        </path>
+                    </svg>
+                </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="">
+                        <h2>Sahiba</h2>
+                        <p>Aditya Rikhari</p>
+                    </div>
+                    <div class="cards">
+                        <div class="play ">
+                            <svg data-encore-id="icon" role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                            class="e-9960-icon e-9960-baseline" viewBox="0 0 24 24">
+                            <path
+                            d="m7.05 3.606 13.49 7.788a.7.7 0 0 1 0 1.212L7.05 20.394A.7.7 0 0 1 6 19.788V4.212a.7.7 0 0 1 1.05-.606">
+                                </path>
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e020a47bbe7141fdfe0eb2cdba7" alt="">
+                        <h2>Sahiba</h2>
+                        <p>Aditya Rikhari</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="playbar">
+        <div class="seekbar">
+            <div class="circle"></div>
+        </div>
+        <div class="abovebar">
+
+            <div class="songinfo"></div>
+            
+            <div class="playbarbtns "> 
+                <img id="previous" class="previousbtn invert" src="previous.svg" alt="">
+                <img id="play" class="play-playbar" src="play.svg" alt="">
+                <img id="next" class="nextbtn invert" src="next.svg" alt="">
+            </div>
+            
+            <div class="songtime"></div>
+            <div class="volume-control flex">
+                <img class="volicon invert" src="volume.svg" alt="volume">
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
