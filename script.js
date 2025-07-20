@@ -4,7 +4,7 @@ let currentSong = new Audio();
 let currentIndex = 0; // Track the current song index
 
 async function getsongs() {
-    let a = await fetch("http://127.0.0.1:5500/songs/");
+    let a = await fetch("/songs");
     let response = await a.text();
     console.log(response);
     let div = document.createElement("div");
